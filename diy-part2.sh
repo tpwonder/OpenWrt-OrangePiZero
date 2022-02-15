@@ -11,10 +11,10 @@
 #
 
 ###### Modify default IP
-sed -i 's/192.168.1.1/192.168.1.11/g' package/base-files/files/bin/config_generate
+sed -i 's/192.168.1.1/192.168.1.100/g' package/base-files/files/bin/config_generate
 
 ###### Modify hostname
-sed -i 's/OpenWrt/NewifiD1/g' package/base-files/files/bin/config_generate
+sed -i 's/OpenWrt/OPiZero/g' package/base-files/files/bin/config_generate
 
 ####### Modify the version number
 sed -i "s/OpenWrt /Steven build from Lede $(TZ=UTC-8 date "+%Y.%m.%d") @ OpenWrt /g" package/lean/default-settings/files/zzz-default-settings
